@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="img/pngegg.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap">
+    <script src="https://kit.fontawesome.com/4a665312bb.js" crossorigin="anonymous"></script>
+    <title>LEO CLUB OF CEG-Library</title>
+     <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* Custom styles */
+        .navbar-shadow {
+            box-shadow: 0 4px 2px -2px gray;
+        }
+        .logo {
+            height: 40px;
+        }
+        .navbar-brand-name {
+            color: #1A4B5F;
+        }
+        .signin-button {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="img/pngegg.png" alt="Logo" class="logo">
+            <strong class="navbar-brand-name ml-2">LEO CLUB OF CEG</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto nav-contents">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#History">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="eventsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Events
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="eventsDropdown">
+                        <a class="dropdown-item" href="#event1">UTSAV</a>
+                        <a class="dropdown-item" href="#event2">THULIR</a>
+                        <a class="dropdown-item" href="#event3">CONVERGENCE</a>
+                        <a class="dropdown-item" href="#event4">VIDIYAL</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="activitiesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Activities
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="activitiesDropdown">
+                        <a class="dropdown-item" href="#activity1">LEO Library</a>
+                        <a class="dropdown-item" href="#activity2">UPSC Classes</a>
+                        <a class="dropdown-item" href="#activity3">Surya Nagar</a>
+                        <a class="dropdown-item" href="#activity4">Student Section</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#questionbank">Question Bank</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ourteam">Our Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactus.html">Contact</a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+    <script>
+        
+        window.addEventListener('scroll', function() {
+            var navbar = document.querySelector('.navbar');
+            if (window.scrollY > 0) {
+                navbar.classList.add('navbar-shadow');
+            } else {
+                navbar.classList.remove('navbar-shadow');
+            }
+        });
+    </script>
+    
+    <!-- LEO Library -->
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Search for books...">
+    </div>
+        <!-- Table Section -->
+    <section class="book-table-section">
+        <div class="container">
+            <table class="book-table">
+                <thead>
+                    <tr>
+                        <th>Book Name</th>
+                        <th>No of Books</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>    
+                        <td>NCRT Social Book 1</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>NCRT Social Book 2 NCRT Social Book 2</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>    
+                        <td>NCRT Social Book 1</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>NCRT Social Book 2 NCRT Social Book 2</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>    
+                        <td>NCRT Social Book 1</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>NCRT Social Book 2 NCRT Social Book 2</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>    
+                        <td>NCRT Social Book 1</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>NCRT Social Book 2 NCRT Social Book 2</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>    
+                        <td>NCRT Social Book 1</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>NCRT Social Book 2 NCRT Social Book 2</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>    
+                        <td>NCRT Social Book 1</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>NCRT Social Book 2 NCRT Social Book 2</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>    
+                        <td>NCRT Social Book 1</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>NCRT Social Book 2 NCRT Social Book 2</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>    
+                        <td>NCRT Social Book 1</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>NCRT Social Book 2 NCRT Social Book 2</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>    
+                        <td>NCRT Social Book 1</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>NCRT Social Book 2 NCRT Social Book 2</td>
+                        <td>8</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script>
+        function searchFunction() {
+    // Declare variables
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("searchInput");
+    filter = input.value.toUpperCase();
+    table = document.querySelector(".book-table");
+    tr = table.getElementsByTagName("tr");
+
+    // Loop through all table rows, and hide those who don't match the search query
+    for (i = 1; i < tr.length; i++) { // Start from 1 to skip the table header
+        td = tr[i].getElementsByTagName("td")[0]; // Search only in the first column (Book Name)
+        if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
+            }
+        }       
+    }
+}
+
+    </script>
+
+    
+   <!-- Footer -->
+   <footer class="footer">
+    <div class="content">
+        <div class="top">
+            <div class="logo-details">
+                <img src="img/pngegg.png" alt="logo"> <!-- Replace with your logo path -->
+                <strong> LEO CLUB OF CEG</strong>
+            </div>
+            <div class="media-icons">
+                <a href="https://www.facebook.com/LEOCEG"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/leoclubofceg"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/leoclubofceg"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+        <div class="link-boxes">
+            
+            <ul class="box">
+                <li class="link_name">Events</li>
+                <li><a href="#">UTSAV</a></li>
+                <li><a href="#">THULIR</a></li>
+                <li><a href="#">CONVERGENCE</a></li>
+                <li><a href="#">VIDIYAL</a></li>
+            </ul>
+            <ul class="box">
+                <li class="link_name">Activities</li>
+                <li><a href="#">LEO Library</a></li>
+                <li><a href="#">UPSC Classes</a></li>
+                <li><a href="#">Surya Nagar</a></li>
+                <li><a href="#">Student Section</a></li>
+            </ul>
+            <ul class="box">
+                <li class="link_name">Address</li>
+                <li>
+                    <a href="https://maps.app.goo.gl/jiJqqTL9BJ7q7Zho9">
+                        LEO Club of CEG,<br>
+                        College of Engineering Guindy,<br>
+                        Anna University,<br>
+                        Chennai - 600025
+                    </a>
+                </li>
+            </ul>
+            <ul class="box input-box">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.3475528565027!2d80.23346657507717!3d13.01352568730571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52679f6962e38f%3A0xc7bd85d034385989!2sLEO%20Club%20of%20CEG!5e0!3m2!1sen!2sin!4v1719751690988!5m2!1sen!2sin" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+            </ul>
+        </div>
+    </div>
+    <div class="bottom-details">
+        <div class="bottom_text">
+            <span class="copyright_text">
+                <a href="#">© All Rights Reserved LEO Club of CEG @ 2024</a>
+            </span>
+            <div class="footer-btn">
+                    
+                <a class="f-btn" href="signin.html">
+                    <i class="fa-regular fa-user" href="signin.html" style="color: #ffffff; opacity: 0.6;"></i>
+                    Sign In
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

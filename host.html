@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="img/pngegg.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>LEO CLUB OF CEG-Admin</title>
+    <link rel="stylesheet" href="Styles/admin.css">
+    
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+            <a href="/" class="logo d-flex align-items-center">
+                <img src="img/pngegg.png" alt="NSS Logo"> <!-- Path to your logo image -->
+                <strong>LEO CLUB OF CEG</strong>
+            </a>
+            <nav id="navbar" class="navbar">
+                <ul class="nav-links">
+
+                    <li><a class="nav-link scrollto" href="#host" style="font-weight: bold;">Student Log</a></li>
+                    <li><a class="nav-link scrollto active" href="AddBooks.html">Update Books</a></li>
+                    <li><a class="getstarted scrollto" href="/Signout">Sign out</a></li>
+                </ul>
+                <button class="mobile-menu-icon">
+                    ☰
+                </button>
+            </nav>
+        </div>
+    </header>
+    <script>
+        document.querySelector('.mobile-menu-icon').addEventListener('click', function() {
+            document.querySelector('#navbar').classList.toggle('active');
+        });
+
+    </script>    
+     
+    <!-- Add Book Log -->
+    <section id="AddBooks" class="add-books-section">
+        <div class="container">
+            <form id="addBookForm" class="form-inline">
+                <div class="form-group">
+                    <label for="StudentName">Student Name:</label>
+                    <input type="text" id="StudentName" name="StudentName" required>
+                </div>
+                <div class="form-group">
+                    <label for="RollNumber">Roll Number:</label>
+                    <input type="number" id="RollNumber" name="RollNumber" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="bookName">Book Name:</label>
+                    <input type="text" id="bookName" name="bookName" required>
+                </div>
+                <div class="form-group">
+                    <label for="Contact">Contact:</label>
+                    <input type="tel" id="Contact" name="Contact" min="0" max="9999999999"  required>
+                </div>
+                <div class="form-group">
+                    <label for="Date">Date:</label>
+                    <input type="date" id="Date" name="Date"   required>
+                </div>
+                <button type="submit" class="btn-add">Add</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- <script>
+        function searchFunction() {
+        // Declare variables
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("searchInput");
+        filter = input.value.toUpperCase();
+        table = document.querySelector(".book-table");
+        tr = table.getElementsByTagName("tr");
+
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 1; i < tr.length; i++) { // Start from 1 to skip the table header
+            td = tr[i].getElementsByTagName("td")[1]; // Search only in the second column (Book Name)
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }       
+        }
+    }
+
+    </script> -->
+
+    <div class="search-bar">
+        <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Search for books...">
+    </div>
+
+    <!-- Table Section -->
+    <section class="book-table-section">
+        <div class="container">
+            <table class="book-table">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Roll Number</th>
+                        <th>Book name</th>
+                        <th>Contact</th>
+                        <th>Date</th>
+                        <th>Return</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Shadhani</td>
+                        <td>2021115302</td>
+                        <td>NCRT Social Book 1</td>
+                        <td>9791791213</td>
+                        <td>02-12-2023</td>
+                        <td><button class="btn-tick">&#10003;</button></td>
+                    </tr>
+                    <tr>
+                        <td>Shadhani</td>
+                        <td>2021115302</td>
+                        <td>NCRT Social Book 1</td>
+                        <td>9791791213</td>
+                        <td>02-12-2023</td>
+                        <td><button class="btn-tick">&#10003;</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+    <script>
+        // JavaScript to handle mobile menu toggle and scroll effect
+        document.addEventListener('DOMContentLoaded', () => {
+            const header = document.getElementById('header');
+            const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
+            const navbar = document.getElementById('navbar');
+            let isMobileMenuOpen = false;
+
+            // Handle scroll effect
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 0) {
+                    header.classList.add('header-scrolled');
+                } else {
+                    header.classList.remove('header-scrolled');
+                }
+            });
+
+            // Handle mobile menu toggle
+            mobileMenuIcon.addEventListener('click', () => {
+                isMobileMenuOpen = !isMobileMenuOpen;
+                navbar.classList.toggle('nav-links-mobile', isMobileMenuOpen);
+                mobileMenuIcon.textContent = isMobileMenuOpen ? '✕' : '☰';
+            });
+        });
+    </script>
+
+
+</body>
+</html>
