@@ -169,6 +169,8 @@ a {
     margin-right: 5px;
 }
 
+
+
 .form-group input {
     padding: 8px;
     border: 1px solid #ccc;
@@ -221,6 +223,8 @@ a {
 
 /* Responsive Table Section */
 .book-table-section {
+	margin-left : 10%;
+	margin-right : 10%;	
     margin-top: 10px;
 }
 
@@ -407,6 +411,10 @@ a {
 			.form-group {
 				width: 100%;
 			}
+
+			.form-group label{
+				font-size : 12px;
+			}
 		
 			.form-group input {
 				width: 100%;
@@ -424,7 +432,8 @@ a {
 		
 			.book-table th, .book-table td {
 				padding: 8px; /* Slightly smaller padding */
-				font-size: 12px; /* Slightly smaller font size */
+				font-size: 8px; /* Slightly smaller font size */
+				font-weight : 500;
 			}
 		
 			.btn-remove {
@@ -432,5 +441,7 @@ a {
 				text-align: center;
 				display: block;
 			}
+
+			
 		}
 		
